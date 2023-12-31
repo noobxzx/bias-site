@@ -13,7 +13,13 @@
 	line-height: 40px;
 }
 .lightbox { 
-	border:1px solid #cccccc; 
-	padding: 2px; 
-	margin: auto;
+	height: 100%;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#wrapper {
+	text-align: center;
 }
