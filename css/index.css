@@ -1,11 +1,10 @@
-#broman {
+.titel {
 	text-align: center;
 	font: bold;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-
-.wtfman{
+.biografie{
 	list-style: none;
 	padding: 5px;
 	margin-bottom: 5px;
@@ -16,5 +15,5 @@
 .lightbox { 
 	border:1px solid #cccccc; 
 	padding: 2px; 
-margin: auto;
+	margin: auto;
 }
