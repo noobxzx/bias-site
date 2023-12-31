@@ -13,11 +13,17 @@
 	line-height: 40px;
 }
 .lightbox { 
-	height: 100%;
-	margin: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.lightbox img {
+    max-width: 100%;
+    height: auto;
 }
 
 #wrapper {
