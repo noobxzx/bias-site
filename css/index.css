@@ -13,8 +13,6 @@ body {
     font-size: 64px;
     font-weight: 600;
     font-style: normal;
-    color: #fff;
-	text-shadow: -3px 5px 5px rgba(0, 0, 0, 0.5);
     text-transform: uppercase;
 }
 
@@ -25,9 +23,10 @@ body {
 }
 
 #slogtxt{
-	color: #fff;
-	text-shadow: -3px 5px 5px rgba(0, 0, 0, 1);
+	text-shadow: -3px 5px 5px rgba(0, 0, 0, 0.5);
 	margin-left: 50px;
+	margin-right: 50px;
+
 }
 
 .slogan{
@@ -38,6 +37,8 @@ body {
 	align-items: center;
 	overflow: hidden;
 	height: 600px; 
+	text-shadow: -3px 5px 5px rgba(0, 0, 0, 0.5);
+	color: #fff;
 	background-image: url(https://ingenieurbuero-heine.de/img/gebaeude-digital-planen-und-bauen-mit-dem-ingenieurbuero-elke-heine.jpg);
 	padding: 6px;
 	background-size: cover;
@@ -54,6 +55,11 @@ body {
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.5);
 	z-index: -1;
+}
+/*  */
+.bio{
+	text-shadow: -3px 5px 5px rgba(0, 0, 0, 0.25);
+
 }
 
 .biografie{
