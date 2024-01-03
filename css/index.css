@@ -2,34 +2,51 @@ body {
 	margin: 0;
 }
 
+/* top-bar args */
 .top-bar {
+	height: auto;
 	background-color: #ffffff;
 	color: #000000; 
-	padding: 10px;
+	padding: 2px;
 	text-align: center;
 	position: fixed;
 	top: 0;
 	width: 100%;
 	z-index: 100; 
+	display: flex;
 }
+
+.top-bar-logo {
+	display: flex;
+    float: left; 
+    margin-left: 5%;
+	margin-top: 0%;
+}
+
+.top-bar img {
+    width: 110px; 
+}
+
+
+/*  */
+
 
 .titel {
 	text-align: center;
-	font-family:'Times New Roman', Times, serif;
+	font-family: 'Kanit', sans-serif;;
     font-size: 64px;
     font-weight: 600;
     font-style: normal;
-    text-transform: uppercase;
 }
 
 .text{
 	font-size: 32px;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-family:'Kanit', sans-serif;;
 }
 
-#slogtxt{
+#slogantxt{
 	text-align: center;
-	max-width: 68%;
+	max-width: 85%;
 	padding: 0;
 	text-shadow: -3px 5px 5px rgba(0, 0, 0, 0.5);
 }
@@ -41,13 +58,14 @@ body {
 	justify-content: center;
 	align-items: center;
 	overflow: hidden;
-	height: 600px; 
+	height: 100vh;
 	text-shadow: -3px 5px 5px rgba(0, 0, 0, 0.5);
 	color: #fff;
-	background-image: url(https://ingenieurbuero-heine.de/img/gebaeude-digital-planen-und-bauen-mit-dem-ingenieurbuero-elke-heine.jpg);
+	background-image: url(../images/gray_back.jpg);
 	background-size: cover;
 	background-position: center;
-	opacity: 0.8;
+	opacity: 0.9;
+	margin: 0;
 }
 
 .slogan::before {
