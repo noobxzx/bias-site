@@ -4,30 +4,52 @@ body {
 
 /* top-bar args */
 .top-bar {
-	height: auto;
+	height: 10vh;
 	background-color: #ffffff;
-	color: #000000; 
 	padding: 2px;
-	text-align: center;
 	position: fixed;
 	top: 0;
 	width: 100%;
 	z-index: 100; 
 	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .top-bar-logo {
 	display: flex;
     float: left; 
-    margin-left: 5%;
-	margin-top: 0%;
+    margin-left: 5vh;
+	margin-top: 0vh;
 }
 
 .top-bar img {
     width: 110px; 
 }
 
+.top-buttons {
+    border: none;
+    background: none;
+    padding: 0;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+}
 
+.top-buttons::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0; /* Set initial width to 0 */
+    height: 2px;
+    background-color: #000;
+    transition: width 0.3s ease; /* Add transition for a smooth effect */
+}
+
+.top-buttons:hover::after {
+    width: 100%; /* Expand the line on hover */
+}
 /*  */
 
 
@@ -78,7 +100,24 @@ body {
 	background-color: rgba(0, 0, 0, 0.5);
 	z-index: -1;
 }
+
+  .big-button{
+	background: #266da0;
+	display: inline-block;
+	padding: 2vh 10vh;
+	background:#266da0;
+	border-radius: 8px;
+	border: 1px solid #266da0;
+	transition: 0.72s;
+	font-size: 18px;
+	color: #ffffff;
+	font-family:'Kanit', sans-serif;;
+	opacity: 0.9;
+  }
+
+  .button:hover{ transform: scale(1.08); transition: 0.16s;}
 /*  */
+
 .bio h2{
 	text-shadow: -3px 5px 5px rgba(0, 0, 0, 0.25);
 }
