@@ -5,50 +5,63 @@ body {
 
 /* top-bar args */
 .top-bar {
-    min-height: 45px; /* Set a minimum height for the top bar */
+	position: relative;
+    min-height: 50px; /* Set a minimum height for the top bar */
     background-color: #ffffff;
-    padding: 2px;
+    padding: 1px;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 100; 
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 .top-bar-logo {
-    margin-left: 5vh;
+	width: 12%;
+    margin-left: auto;
+	margin-right: auto;
 	max-height: 100%
 }
 
 .top-bar img {
-    max-height: 100%; /* Ensure the image does not exceed the maximum height of the logo container */
+    max-height: 12%;
+    max-width: 12%;
+    height: auto;
     width: auto;
+    min-width: 155px; /* Set a minimum width for the logo */
+}
+
+.top-bar-buttons{
+	display: flex;
+	align-items: center;
 }
 
 .top-buttons {
     border: none;
     background: none;
     padding: 0;
-    font-size: 16px;
-    margin-right: 10px;
+    font-size: 19px;
+    margin-right: 3vh;
     cursor: pointer;
+    position: relative;
+    color: #000; /* Set the default color */
+    transition: color 0.3s ease; /* Add color transition for smooth effect */
 }
 
 .top-buttons::after {
     content: "";
     position: absolute;
     left: 0;
-    bottom: 0;
-    width: 0; /* Set initial width to 0 */
+    bottom: -3px;
+    width: 0;
     height: 2px;
     background-color: #000;
-    transition: width 0.3s ease; /* Add transition for a smooth effect */
+    transition: width 0.3s ease;
 }
 
 .top-buttons:hover::after {
-    width: 100%; /* Expand the line on hover */
+    width: 100%;
 }
 /*  */
 
@@ -95,17 +108,17 @@ body {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0.5);
-	z-index: -1;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: -2;
 }
 
 .big-button{
-	background: #266da0;
+	background: #1c2d3d;
 	display: inline-block;
 	padding: 2.2vh 11vh;
-	background:#266da0;
+	background:#1c2d3d;
 	border-radius: 8px;
-	border: 1px solid #266da0;
+	border: 1px solid #1c2d3d;
 	transition: 0.72s;
 	font-size: 18px;
 	color: #ffffff;
