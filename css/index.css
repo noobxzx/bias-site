@@ -24,8 +24,10 @@ body {
 }
 
 .top-bar-logo{
-	max-height: 12%;
-    max-width: 12%;
+	margin-left: 10px;
+	margin-right: 35px;
+	max-height: 11%;
+    max-width: 11%;
     height: auto;
     width: auto;
     min-width: 155px; /
@@ -40,23 +42,23 @@ body {
     border: none;
     background: none;
     padding: 0;
-    font-size: 19px;
-    margin-right: 10px;
+    font-size: 15px;
+    margin-right: 20px;
     cursor: pointer;
     position: relative;
     color: #000; /* Set the default color */
-    transition: color 0.3s ease; /* Add color transition for smooth effect */
+    transition: color 0.4s ease; /* Add color transition for smooth effect */
 }
 
 .top-button2 {
     border: none;
     background: none;
     padding: 0;
-    font-size: 19px;
+    font-size: 15px;
     cursor: pointer;
     position: relative;
     color: #000; /* Set the default color */
-    transition: color 0.3s ease; /* Add color transition for smooth effect */
+    transition: color 0.4s ease; /* Add color transition for smooth effect */
 }
 
 .top-button1::after,
@@ -66,14 +68,20 @@ body {
     left: 0;
     bottom: -3px;
     width: 0;
-    height: 2px;
-    background-color: #000;
+    height: 1.5px;
+    background-color: #e20714;
     transition: width 0.3s ease;
+}
+
+.top-button1:hover,
+.top-button2:hover {
+    color: #e20714; /* Change the color on hover */
 }
 
 .top-button1:hover::after,
 .top-button2:hover::after {
     width: 100%;
+    color: #e20714; /* Change the color of the text on hover */
 }
 /*  */
 
