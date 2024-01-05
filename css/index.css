@@ -59,7 +59,8 @@ body {
     transition: color 0.3s ease; /* Add color transition for smooth effect */
 }
 
-.top-buttons::after {
+.top-button1::after,
+.top-button2::after {
     content: "";
     position: absolute;
     left: 0;
@@ -70,7 +71,8 @@ body {
     transition: width 0.3s ease;
 }
 
-.top-buttons:hover::after {
+.top-button1:hover::after,
+.top-button2:hover::after {
     width: 100%;
 }
 /*  */
