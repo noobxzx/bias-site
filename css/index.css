@@ -30,7 +30,7 @@ body {
     max-width: 11%;
     height: auto;
     width: auto;
-    min-width: 155px; /
+    min-width: 155px; 
 }
 
 .top-bar-buttons{
@@ -43,10 +43,11 @@ body {
     background: none;
     padding: 0;
     font-size: 15px;
+	font-weight: 400;
     margin-right: 20px;
     cursor: pointer;
     position: relative;
-    color: #000; /* Set the default color */
+    color: #1c2d3d; /* Set the default color */
     transition: color 0.4s ease; /* Add color transition for smooth effect */
 }
 
@@ -55,9 +56,10 @@ body {
     background: none;
     padding: 0;
     font-size: 15px;
+	font-weight: 400;
     cursor: pointer;
     position: relative;
-    color: #000; /* Set the default color */
+    color: #1c2d3d; /* Set the default color */
     transition: color 0.4s ease; /* Add color transition for smooth effect */
 }
 
@@ -89,12 +91,12 @@ body {
 .titel {
 	text-align: center;
     font-size: 64px;
-    font-weight: 600;
-    font-style: normal;
+    font-weight: 500;
 }
 
 .text{
 	font-size: 32px;
+	font-weight: 300;
 }
 
 #slogantxt{
@@ -156,6 +158,46 @@ body {
 		transform: scale(1);
 		transition: transform 0.16s;
 	}
+/*  */
+
+/* cont1 */
+.container1{
+	flex: 1;
+	margin-top: 100px;
+	background-color: #8d91956a;
+	display: flex;
+}
+
+.first-coloumn{
+	display: inline-flex;
+	flex-direction: column;
+}
+
+.second-coloumn{
+	display: inline-flex;
+	flex-direction: column;
+}
+
+.title-container1{
+	font-weight: 500;
+}
+
+.list1{
+	font-weight: 400;
+	color: #1c2d3d;
+}
+.list1 li {
+    border-bottom: 1px solid #1c2d3d; /* Додати лінію між кожним пунктом */
+    padding: 10px 0; /* Додати відступи для зручності */
+}
+
+.architect-pic{
+    flex-shrink: 0;
+    max-width: 100%; /* Set maximum width to 100% */
+    height: auto; /* Maintain aspect ratio */
+    display: flex;/* Remove any default inline spacing */
+}
+
 /*  */
 
 .bio h2{
