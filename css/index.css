@@ -160,7 +160,74 @@ body {
 	}
 /*  */
 
-/* cont1 */
+/* біографіяяяяя */
+.bio-container{
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 30px;
+	padding-left: 30px;
+	margin-top: 40px;
+	width: 90%;
+}
+.bio-container-text-left{
+	padding-bottom: 15px;
+}
+.bio-header1{
+	font-weight: 400;
+	color: #1c2d3d;
+	padding-left: 0;
+	margin-bottom: 0px;
+}
+.bio-text1{
+	font-weight: 400;
+	color: #1c2d3d;
+	font-size: 19px;
+}
+
+.bio-werdegang{
+	overflow: auto;
+	justify-content: space-between;
+}
+
+.image-column-bio{
+	align-items: center;
+}	
+
+.bias-photo{
+	height: 450px;
+	float: left;
+	margin-right: 30px;
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+
+.bio-header2{
+	font-weight: 400;
+	color: #1c2d3d;
+	padding-left: 0;
+	margin: 0;
+}
+.biografie1{
+	overflow: hidden;
+	list-style: none;
+	font-weight: 400;
+	color: #1c2d3d;
+	font-size: 19px;
+	padding-left: 20px;
+}
+
+.biografie1 li::before {
+	content: "\2022";
+	color: #e20714;
+	font-weight: bold;
+	display: inline-block; 
+	width: 1em;
+	margin-left: -1em;
+}
+
+/*  */
+
+/* page2 cont */
 .container1{
 	flex: 1;
 	margin-top: 100px;
@@ -168,12 +235,12 @@ body {
 	display: flex;
 }
 
-.first-coloumn{
+.first-column{
 	display: inline-flex;
 	flex-direction: column;
 }
 
-.second-coloumn{
+.second-column{
 	display: inline-flex;
 	flex-direction: column;
 }
@@ -200,31 +267,3 @@ body {
 
 /*  */
 
-.bio h2{
-	text-shadow: -3px 5px 5px rgba(0, 0, 0, 0.25);
-}
-
-.biografie{
-	list-style: none;
-	padding: 5px;
-	margin-bottom: 5px;
-	text-align: center;
-	line-height: 40px;
-}
-.lightbox { 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 0 auto;
-    width: fit-content;
-}
-
-.lightbox img {
-    max-width: 100%;
-    height: auto;
-}
-
-#wrapper {
-	text-align: center;
-}
