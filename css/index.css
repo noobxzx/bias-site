@@ -1,5 +1,7 @@
-body {
+body, html {
 	margin: 0;
+	padding: 0;
+	height: 100%;
 	font-family: 'Kanit', sans-serif;
 }
 
@@ -252,6 +254,11 @@ body {
 /*footer  */
 .footer{
 	width: 100%;
+	height: auto;
+	background-color: #eee;
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .footer-content{
