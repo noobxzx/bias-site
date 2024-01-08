@@ -162,16 +162,31 @@ body {
 
 /* біографіяяяяя */
 .bio-container{
+	margin-top: 0px;
+}
+
+.bio-container-text-left{
+	background-color: #fff;
+}
+
+.bio-container-text-left-content{
 	margin-right: auto;
 	margin-left: auto;
 	padding-right: 30px;
 	padding-left: 30px;
-	margin-top: 40px;
+	margin-top: 30px;
+	width: 90%;
+	padding-bottom: 20px;
+}
+
+.bio-container-text-left-content-1{
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 30px;
+	padding-left: 30px;
 	width: 90%;
 }
-.bio-container-text-left{
-	padding-bottom: 15px;
-}
+
 .bio-header1{
 	font-weight: 400;
 	color: #1c2d3d;
@@ -185,6 +200,15 @@ body {
 }
 
 .bio-werdegang{
+	background-color: #eee;
+}
+
+.bio-werdegang-content{
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 30px;
+	padding-left: 30px;
+	width: 90%;
 	overflow: auto;
 	justify-content: space-between;
 }
@@ -223,6 +247,20 @@ body {
 	display: inline-block; 
 	width: 1em;
 	margin-left: -1em;
+}
+
+/*footer  */
+.footer{
+	width: 100%;
+}
+
+.footer-content{
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 30px;
+	padding-left: 30px;
+	margin-top: 40px;
+	width: 90%;
 }
 
 /*  */
