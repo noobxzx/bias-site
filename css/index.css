@@ -7,7 +7,6 @@ body, html {
 
 /* top-bar args */
 .top-bar {
-	position: relative;
     min-height: 50px; /* Set a minimum height for the top bar */
     background-color: #ffffff;
     padding: 1px;
@@ -43,7 +42,9 @@ body, html {
 .top-button1 {
     border: none;
     background: none;
-    padding: 0;
+    padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 0px; padding-right: 0px;
     font-size: 15px;
 	font-weight: 400;
     margin-right: 20px;
@@ -54,9 +55,12 @@ body, html {
 }
 
 .top-button2 {
+	margin-right: ;
     border: none;
     background: none;
-    padding: 0;
+    padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 0px; padding-right: 0px;
     font-size: 15px;
 	font-weight: 400;
     cursor: pointer;
@@ -64,6 +68,16 @@ body, html {
     color: #1c2d3d; /* Set the default color */
     transition: color 0.4s ease; /* Add color transition for smooth effect */
 }
+
+@media (min-width: 1720px) {
+	.top-bar-logo{
+		margin-right: 0px;
+	}
+	.top-button1 { 
+		margin-right: 40px;
+	}
+}
+
 
 .top-button1::after,
 .top-button2::after {
@@ -94,6 +108,7 @@ body, html {
 	text-align: center;
     font-size: 64px;
     font-weight: 500;
+	word-wrap: break-word;
 }
 
 .text{
@@ -160,6 +175,32 @@ body, html {
 		transform: scale(1);
 		transition: transform 0.16s;
 	}
+@media (max-width: 850px){
+	.titel{
+		margin-top: 120px;
+		margin-bottom: 60px;
+		line-height: 100%;
+		font-size: 60px;
+	}
+	.text{
+		margin-top: 10px;
+		margin-bottom: 0px;
+		line-height: 120%;
+	}
+	.big-button{
+		margin-bottom:4vh;
+	}
+}
+
+@media (max-width: 450px){
+	.titel{
+		margin-top: 140px;
+		line-height: 100%;
+		font-size: 60px;
+		margin-bottom: 2vh;
+	}
+}
+
 /*  */
 
 /* біографіяяяяя */
@@ -177,7 +218,7 @@ body, html {
 	padding-right: 30px;
 	padding-left: 30px;
 	margin-top: 30px;
-	width: 90%;
+	width: 80%;
 	padding-bottom: 20px;
 }
 
@@ -186,7 +227,7 @@ body, html {
 	margin-left: auto;
 	padding-right: 30px;
 	padding-left: 30px;
-	width: 90%;
+	width: 80%;
 }
 
 .bio-header1{
@@ -210,7 +251,7 @@ body, html {
 	margin-left: auto;
 	padding-right: 30px;
 	padding-left: 30px;
-	width: 90%;
+	width: 80%;
 	overflow: auto;
 	justify-content: space-between;
 }
@@ -225,6 +266,12 @@ body, html {
 	margin-right: 30px;
 	margin-top: 15px;
 	margin-bottom: 30px;
+}
+
+@media (max-width: 1120px){
+	.bias-photo{
+		height: 250px;
+	}
 }
 
 .bio-header2{
@@ -267,7 +314,16 @@ body, html {
 	padding-right: 30px;
 	padding-left: 30px;
 	margin-top: 40px;
-	width: 90%;
+	width: 80%;
+}
+
+@media (max-width: 1120px) {
+    .bio-container-text-left-content,
+    .bio-container-text-left-content-1,
+    .bio-werdegang-content,
+    .footer-content{
+		width: 100%;
+    }
 }
 
 /*  */
