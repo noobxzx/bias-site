@@ -1,0 +1,39 @@
+/* page2 cont */
+.container1{
+	flex: 1;
+	margin-top: 100px;
+	background-color: #8d91956a;
+	display: flex;
+}
+
+.first-column{
+	display: inline-flex;
+	flex-direction: column;
+}
+
+.second-column{
+	display: inline-flex;
+	flex-direction: column;
+}
+
+.title-container1{
+	font-weight: 500;
+}
+
+.list1{
+	font-weight: 400;
+	color: #1c2d3d;
+}
+.list1 li {
+    border-bottom: 1px solid #1c2d3d; /* Додати лінію між кожним пунктом */
+    padding: 10px 0; /* Додати відступи для зручності */
+}
+
+.architect-pic{
+    flex-shrink: 0;
+    max-width: 100%; /* Set maximum width to 100% */
+    height: auto; /* Maintain aspect ratio */
+    display: flex;/* Remove any default inline spacing */
+}
+
+/*  */
