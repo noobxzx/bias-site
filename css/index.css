@@ -176,6 +176,9 @@ body, html {
 		transition: transform 0.16s;
 	}
 @media (max-width: 850px){
+	#slogantxt{
+		max-width: 92%;
+	}
 	.titel{
 		margin-top: 120px;
 		margin-bottom: 60px;
@@ -183,7 +186,7 @@ body, html {
 		font-size: 60px;
 	}
 	.text{
-		margin-top: 10px;
+		margin-top: 15px;
 		margin-bottom: 0px;
 		line-height: 120%;
 	}
@@ -194,7 +197,7 @@ body, html {
 
 @media (max-width: 450px){
 	.titel{
-		margin-top: 140px;
+		margin-top: 100px;
 		line-height: 100%;
 		font-size: 60px;
 		margin-bottom: 2vh;
@@ -206,9 +209,11 @@ body, html {
 /* біографіяяяяя */
 .bio-container{
 	margin-top: 0px;
+	padding-top: 0px;
 }
 
 .bio-container-text-left{
+	margin-top: 0px;
 	background-color: #fff;
 }
 
@@ -303,9 +308,8 @@ body, html {
 	width: 100%;
 	height: auto;
 	background-color: #eee;
-	margin: 0;
+	margin-top: 40px;
     padding: 0;
-    box-sizing: border-box;
 }
 
 .footer-content{
@@ -313,9 +317,69 @@ body, html {
 	margin-left: auto;
 	padding-right: 30px;
 	padding-left: 30px;
-	margin-top: 40px;
+	padding-top: 40px;
+	padding-bottom: 50px;
 	width: 80%;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
 }
+
+.find-us, 
+.kontakt,
+.rights{
+	flex-basis: 33%; /* Изменено на flex-basis для установки минимальной ширин*/
+	flex-grow: 1;
+	box-sizing: border-box;
+}
+
+.strong-footer{
+	color: #1c2d3d;
+	font-weight: 600;
+	display: block;
+	margin-top: 0px;
+	margin-bottom: 15px;
+}
+
+.footer-button{
+	cursor: pointer;
+	text-decoration: none;
+	color: #1c2d3d; /* Set the default color */
+    transition: color 0.3s ease; 
+	display: block;
+	padding-bottom: 15px;
+}
+
+.footer-button-1{
+	cursor: pointer;
+	font-weight: 400;
+	color: #1c2d3d; /* Set the default color */
+	text-decoration: none;
+    transition: color 0.3s ease; 
+	display: block;
+	margin: 0px;
+	padding: 0px;
+}
+
+.footer-button:hover,
+.footer-button-1:hover{
+    color: #e20714; /* Change the color on hover */
+}
+
+.footer-button:hover::after,
+.footer-button-1:hover::after {
+    width: 100%;
+    color: #e20714; /* Change the color of the text on hover */
+}
+
+@media (max-width: 1120px){
+	.footer-content{
+		display: table;
+		flex-wrap: wrap;
+	}
+}
+
+/*  */
 
 @media (max-width: 1120px) {
     .bio-container-text-left-content,
@@ -325,8 +389,6 @@ body, html {
 		width: 100%;
     }
 }
-
-/*  */
 
 /* page2 cont */
 .container1{
