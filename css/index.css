@@ -289,6 +289,14 @@ body, html {
 		height: 250px;
 	}
 }
+@media (max-width: 920px){
+	.bias-photo{
+		float: none;
+	}
+	.bio-werdegang-content {
+		flex-direction: column-reverse; /* Change the direction of the flex container to column-reverse */
+	  }
+}
 
 .bio-header2{
 	font-weight: 400;
