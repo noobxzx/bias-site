@@ -328,7 +328,7 @@ body, html {
 	margin-left: auto;
 	padding-right: 30px;
 	padding-left: 30px;
-	padding-top: 40px;
+	padding-top: 30px;
 	padding-bottom: 80px;
 	width: 80%;
 	display: flex;
@@ -383,7 +383,7 @@ body, html {
     color: #e20714; /* Change the color of the text on hover */
 }
 
-@media (max-width: 1120px){
+@media (max-width: 720px){
 	.footer-content{
 		display: table;
 		flex-wrap: wrap;
@@ -400,44 +400,3 @@ body, html {
 		width: 100%;
     }
 }
-
-/* page2 cont */
-.container1{
-	flex: 1;
-	margin-top: 100px;
-	background-color: #8d91956a;
-	display: flex;
-}
-
-.first-column{
-	display: inline-flex;
-	flex-direction: column;
-}
-
-.second-column{
-	display: inline-flex;
-	flex-direction: column;
-}
-
-.title-container1{
-	font-weight: 500;
-}
-
-.list1{
-	font-weight: 400;
-	color: #1c2d3d;
-}
-.list1 li {
-    border-bottom: 1px solid #1c2d3d; /* Додати лінію між кожним пунктом */
-    padding: 10px 0; /* Додати відступи для зручності */
-}
-
-.architect-pic{
-    flex-shrink: 0;
-    max-width: 100%; /* Set maximum width to 100% */
-    height: auto; /* Maintain aspect ratio */
-    display: flex;/* Remove any default inline spacing */
-}
-
-/*  */
-

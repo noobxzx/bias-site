@@ -1,39 +1,78 @@
 /* page2 cont */
-.container1{
+/* .container1{
 	flex: 1;
 	margin-top: 100px;
-	background-color: #8d91956a;
+	background-color: #eee;
 	display: flex;
-}
+} */
 
-.first-column{
+/* .first-column-content{
 	display: inline-flex;
 	flex-direction: column;
+} */
+
+.container1{
+	width: 100%;
+	height: auto;
+	background-color: #ffffff;
+    padding: 0;
+    font-weight: 500;
+    flex-direction: column;
+    margin-top: 100px;
 }
 
-.second-column{
-	display: inline-flex;
-	flex-direction: column;
+.first-column-header,
+.first-column-content {
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .title-container1{
-	font-weight: 500;
+    font-weight: 400;
+	color: #1c2d3d;
+	padding-left: 0;
+	margin-bottom: 0px;
+	padding-top: 0px;
 }
 
 .list1{
 	font-weight: 400;
+    font-size: 19px;
 	color: #1c2d3d;
+    list-style: none; 
+    margin-right: 40px;
+    width: 650px;
 }
 .list1 li {
     border-bottom: 1px solid #1c2d3d; /* Додати лінію між кожним пунктом */
-    padding: 10px 0; /* Додати відступи для зручності */
+    padding: 14px 0; /* Додати відступи для зручності */
+    margin-right: 40px;
+    position: static;
+}
+
+.list1 li::before {
+	content: "\2022";
+	color: #e20714;
+	font-weight: bold;
+	display: inline-block; 
+	width: 1em;
+	margin-left: -1em;
+    position: absolute;
 }
 
 .architect-pic{
-    flex-shrink: 0;
-    max-width: 100%; /* Set maximum width to 100% */
-    height: auto; /* Maintain aspect ratio */
-    display: flex;/* Remove any default inline spacing */
+    height: 300px;
+    align-self: flex-start; 
+}
+
+@media (max-width: 1120px){
+	.architect-pic{
+		height: 250px;
+	}
 }
 
 /*  */
+
