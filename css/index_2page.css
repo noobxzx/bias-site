@@ -79,20 +79,26 @@
     .architect-pic{
         height: 250px;
     }
-}
-@media(max-width: 900px){
-    .first-column-content{
-        flex-direction: column-reverse;
-    }
-    .architect-pic{
-        height: 250px;
-    }
     .list1{
         width: 500px;
     }
 }
+@media(max-width: 940px){
+    .first-column-content{
+        flex-direction: column-reverse;
+    }
+    .architect-pic{
+        height: 350px;
+    }
+    .list1{
+        width: 525px;
+    }
+}
 
 @media(max-width: 700px){
+    .architect-pic{
+        height: 250px;
+    }
     .list1{
         width: 375px;
     }
