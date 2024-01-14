@@ -21,12 +21,12 @@
     margin-top: 100px;
 }
 
-.first-column-header,
 .first-column-content {
     margin-right: auto;
     margin-left: auto;
     width: 80%;
     display: flex;
+    overflow: auto;
     justify-content: space-between;
 }
 
@@ -44,12 +44,11 @@
 	color: #1c2d3d;
     list-style: none; 
     margin-right: 40px;
-    width: 650px;
+    width: 550px;
 }
 .list1 li {
     border-bottom: 1px solid #1c2d3d; /* Додати лінію між кожним пунктом */
     padding: 14px 0; /* Додати відступи для зручності */
-    margin-right: 40px;
     position: static;
 }
 
@@ -66,13 +65,28 @@
 .architect-pic{
     height: 300px;
     align-self: flex-start; 
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
-@media (max-width: 1120px){
-	.architect-pic{
-		height: 250px;
-	}
+@media (max-width: 1220px){
+    .first-column-content{
+        width: 100%; 
+        padding-right: 30px;
+        padding-left: 30px;
+        justify-content: center;
+    }
 }
-
+@media(max-width: 1000px){
+    .first-column-content{
+        flex-direction: column-reverse;
+    }
+    .architect-pic{
+        height: 250px;
+    }
+    .list1{
+        width: 500px;
+    }
+}
 /*  */
 
