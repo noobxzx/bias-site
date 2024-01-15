@@ -27,6 +27,7 @@
     width: 80%;
     display: flex;
     justify-content: space-between;
+    overflow: hidden; 
 }
 
 .title-container1{
